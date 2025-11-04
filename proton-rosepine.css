@@ -1,0 +1,172 @@
+/* ==UserStyle==
+@name           Rosepine Proton suite theme
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Rosepine inspired theme - Use carbon theme in Proton
+@author         chris4727
+==/UserStyle== */
+
+@-moz-document domain("proton.me") {
+  .color-primary {
+    color: #c4a7e7
+  }
+  
+  :root, .ui-standard {
+    --primary: #c4a7e7;
+	--primary-contrast: #191724;
+	--signal-danger-minor-2: #f29a86;
+	--signal-danger-minor-1: #f29a86;
+	--signal-danger: #eb6f92;
+	--signal-danger-major-1: #eb6f92f7;
+	--signal-danger-major-2: #eb6f92ed;
+	--signal-danger-major-3: #eb6f92db;
+	--signal-danger-contrast: #191724;
+	--signal-warning-minor-2: #f6c177;
+	--signal-warning-minor-1: #f6c177;
+	--signal-warning: #f6c177;
+	--signal-warning-major-1: #f6c177f0;
+	--signal-warning-major-2: #f6c177db;
+	--signal-warning-major-3: #f6c177c2;
+	--signal-warning-contrast: #191724;
+	--signal-success-minor-2: #06221b;
+	--signal-success-minor-1: #093228;
+	--signal-success: #f8f8f2;
+	--signal-success-major-1: #f8f8f2;
+	--signal-success-major-2: #f8f8f2f7;
+	--signal-success-major-3: #f8f8f2ed;
+	--signal-success-contrast: #282a36;
+	--signal-info-minor-2: #c4a7e7;
+	--signal-info-minor-1: #c4a7e7;
+	--signal-info: #c4a7e7;
+	--signal-info-major-1: #c4a7e7f0;
+	--signal-info-major-2: #c4a7e7de;
+	--signal-info-major-3: #c4a7e7cf;
+	--signal-info-contrast: #191724;
+	--interaction-norm-minor-2: #c4a7e7;
+	--interaction-norm-minor-1: #c4a7e7;
+	--interaction-norm: #c4a7e7;
+	--interaction-norm-major-1: #c4a7e7bd;
+	--interaction-norm-major-2: #c4a7e7f9;
+	--interaction-norm-major-3: #c4a7e7;
+	--interaction-norm-contrast: #191724;
+	--interaction-weak-minor-2: #26233a;
+	--interaction-weak-minor-1: #26233a;
+	--interaction-weak: #26233a;
+	--interaction-weak-major-1: #26233ab3;
+	--interaction-weak-major-2: #26233a;
+	--interaction-weak-major-3: #26233a;
+	--interaction-weak-contrast: #e0def4;
+	--text-norm: #e0def4;
+	--text-weak: #e0def4c4;
+	--text-hint: #e0def47d;
+	--text-disabled: #6e6a86;
+	--text-invert: #191724;
+	--field-norm: #6e6a86;
+	--field-hover: #c4a7e7;
+	--field-disabled: #26233a;
+	--field-focus: #908caa;
+	--field-highlight: rgba(61, 61, 61, 0.3);
+	--border-norm: #6e6a86;
+	--border-weak: #6e6a867d;
+	--background-norm: #191724;
+	--background-weak: #1f1d2e;
+	--background-strong: #26233a;
+	--interaction-default: transparent;
+	--interaction-default-hover: #26233a;
+	--interaction-default-active: #1f1d2e;
+	--shadow-norm-opacity: 0.5;
+	--shadow-lifted-opacity: 0.75;
+	--backdrop-norm: rgba(0, 0, 0, 0.48);
+	--optional-scrollbar-thumb-color: #c4a7e7;
+	--optional-scrollbar-thumb-hover-color: #c4a7e7ba;
+	--optional-link-norm: var(--interaction-norm-major-1);
+	--optional-link-hover: var(--interaction-norm-major-2);
+	--optional-link-active: var(--interaction-norm-major-3);
+	--optional-email-item-unread-background-color: #282a36;
+	--optional-email-item-read-background-color: var(--background-norm);
+	--optional-email-item-read-text-color: var(--text-weak);
+	--optional-mini-calendar-today-color: #c4a7e7;
+	--optional-logo-icon-text-color: #c4a7e7;
+	--focus-outline: #c4a7e7;
+	--favorite-icon-color: #f6c177;
+  }
+
+:root, .quickSettingsSection {
+     background: #191724;
+}
+    
+:root, .button-promotion {
+  --upgrade-color-stop-1: #bd93f9;
+  --upgrade-color-stop-2: #bd93f9;
+}
+
+:root, .drawerAppSection, .drawerAppSection:focus, .drawerAppSection:focus-within, .drawerAppSection:hover {
+    --background-color: #191724;
+}
+
+    .drawerAppSection, .drawerAppSection:focus, .drawerAppSection:focus-within, .drawerAppSection:hover {
+	background-color: #1f1d2e;
+	min-height: 2.5rem;
+}
+
+/*breat's code starts here*/ 
+
+#proton-editor-container,
+#proton-editor-toggle-container,
+#proton-root,
+#proton-root div,
+#proton-root p,
+#proton-root td,
+#proton-root td.container,
+#rooster-editor,
+#rooster-editor div,
+#rooster-editor p,
+#rooster-editor td,
+.composer-content--rich-edition,
+.message-content,
+.protonmail_quote,
+blockquote div,
+blockquote p,
+blockquote td {
+    background: var(--email-message-view-background-color) !important;
+    color: var(--text-norm) !important;
+}
+
+blockquote {
+    border-left: #c4a7e7 !important;
+}
+
+/* Signature color */
+.protonmail_signature_block-user,
+.protonmail_signature_block-user table div,
+.protonmail_signature_block-proton {
+    color: var(--text-norm) !important;
+}
+
+/* Link color */
+#rooster-editor a,
+.protonmail_signature_block-user a,
+.protonmail_signature_block-proton a {
+    color: #c4a7e7 !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white !important;
+}
+}
+
+/* Based on Blisterexe's Dracula color scheme */
+/*credits to breat (https://breat.fr/), Plisterexe repurposed much of their code for the editor and plaintext letters*/
